@@ -168,8 +168,9 @@ th, td {
 
 /*
     el estilo text-decoration-skip-ink, dependiendo de qué valor le seteemos
-    permite, junto al estilo de subrayado, permitir que éste este por encima
-    del texto (valor en 'none'), o que respete el texto y no lo "pise" (valor 'auto')
+    permite, junto al estilo de subrayado:
+        - que este (el subrayado) esté por encima del texto (valor en 'none'); 
+        - que respete el texto y no lo "pise" (valor 'auto')
 */
 .skip_ink_container {
     width: 270px;
