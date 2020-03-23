@@ -1,0 +1,189 @@
+/* 
+    CSS Custom properties (variables CSS)
+    Suelen definirse bajo el pseudoclase :root para dejarlas como properties
+    globales.
+    Son properties y no "variables" por dos razones:
+     1. el valor es heredado por los elementos hijos
+     2. el valor de una property puede redefinirse por cascada
+    
+
+*/
+
+:root {
+    --default-color: yellow;
+}
+
+.container {
+    background-color: var(--default-color);
+    border: 1px solid black;
+    height: 100px;
+    position: relative;
+}
+
+.child_container {
+    background-color: green; /* Overriding de la propieddad background-color */
+    border: 1px solid black;
+    width: 80px;
+    height: 75px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+/* Property collapse permite que las columnas y celdas se colapsen a un solo borde */
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+/* 
+    el pseudo selector nth-child permite seleccionar un rango de elementos
+    desde el elemento que indiquemos, colocando su "posición", como su fuera
+    un array de elementos
+*/
+
+/*
+    En este caso, seleccionamos de cada fila (tr), la celda
+    de la posición 2.
+*/
+#table_1 tr td:nth-child(2) {
+    background-color: blueviolet;
+}
+
+#table_1 th:nth-child(2) {
+    background-color: aqua;
+}
+
+#table_1 tr:nth-child(5) td:nth-child(4){
+    background-color: yellowgreen;
+}
+
+/* Los pseudoselectores :first-of-type y :last-of-type
+    permiten seleccionar el primero o ultimo elemento
+    hermano del tipo indicado antes de los ":" */
+#table_1 tr:nth-child(3) td:last-of-type {
+    background-color: darkgoldenrod;
+}
+
+#table_1 tr:nth-child(3) td:first-of-type {
+    background-color: slategrey;
+}
+
+#table_2{
+    width: 100%;
+}
+
+/* 
+    el selector (*) permite seleccionar todos los elementos
+    que sean hijos del padre indicado
+*/
+#table_2 *{
+    background-color: cadetblue;
+}
+
+.box_model {
+    background-color: grey;
+    border: 1px solid black;
+    height: 100px;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.position_box_1 {
+    padding: 5px;
+    border: 1px solid black;
+    position: relative;
+    display: block;
+}
+
+.position_box_2 {
+    padding: 5px;
+    border: 1px solid black;
+    position: relative;
+    display: inline-block;
+}
+
+.position_box_3 {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid red;
+    background-color: antiquewhite;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+}
+
+.position_box_4 {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid green;
+    background-color: aquamarine;
+    font-family: "CMU Classical Serif";
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: right;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/*
+    el estilo text-align-last alinea la última linea de texto
+    que encuentre.
+*/
+.text_4 {
+    text-align-last: left;
+}
+
+/*
+    el estilo overflow: auto, agrega una barra de scroll al contenedor, si el 
+    contenido sobrepasa el espacio delimitado del contenedor. Así, se puede
+    ver todo el contenido, scrolleando por el <div>
+*/
+.overflow_box {
+    width: 250px;
+    height: 100px;
+    overflow: auto;
+    border: 2px solid orangered
+}
+
+/*
+    el estilo overflow: hidden, oculta el contenido que sobrepasa
+    los limites establecidos del div contenedor; dejando el contenido
+    oculto, o se muestra hasta donde las medidas del contenedor, dejen
+    ver.
+*/
+.overflow_box_1 {
+    width: 250px;
+    height: 100px;
+    overflow: hidden;
+    border: 2px solid blue
+}
+
+/*
+    el estilo text-decoration-skip-ink, dependiendo de qué valor le seteemos
+    permite, junto al estilo de subrayado, permitir que éste este por encima
+    del texto (valor en 'none'), o que respete el texto y no lo "pise" (valor 'auto')
+*/
+.skip_ink_container {
+    width: 270px;
+    height: 200px;
+}
+
+.skip_ink_none {
+    text-decoration: solid underline purple;
+    text-decoration-skip-ink: none;
+    font-size: 20px;
+}
+
+.skip_ink_auto {
+    text-decoration: solid underline blue;
+    text-decoration-skip-ink: auto;
+    font-size: 20px;
+}
