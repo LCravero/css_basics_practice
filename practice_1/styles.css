@@ -29,7 +29,11 @@
     margin-top: 15px;
 }
 
-/* Property collapse permite que las columnas y celdas se colapsen a un solo borde */
+/* Property collapse permite que las columnas y celdas se colapsen a un solo borde
+    Visualmente, veremos una sola línea divisoria entre celdas.
+    Sin setear la propiedad border-collapse, vamos a ver cada celda por sepada, 
+    con una separación entre cada una de las que haya dentro de nuestra tabla creada
+*/
 table, tr, td, th {
     border: 1px solid black;
     border-collapse: collapse;
