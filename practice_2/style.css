@@ -1,0 +1,138 @@
+.text_rendering_container {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/*
+    text-rendering: optimizeSpeed optimiza la velocidad de renderizado
+    de texto en grandes bloques de este.
+
+*/
+.text_rendenring_speed {
+    text-rendering: optimizeSpeed;
+}
+
+/*
+    text-rendering: optimizeLegibility produce visualmente una mejora
+    separndo las palabras que tengan sus caracteres muy unidos.
+*/
+.text_rendenring_legibility {
+    text-rendering: optimizeLegibility;
+}
+
+/*
+    text-indent: <medida px, em, %> esta propiedad nos permite definir
+    el tamaño de la conocida sangría en un texto.
+    Si la medida pasada es negativa (con signo - y en px), nos permite
+    ver el texto dentro del contenedor en donde lo hayamos puesto, por fuera
+    de este, para su lado izquierdo.
+
+*/
+.text_indent {
+    text-indent: 25px;
+}
+
+
+.text_orientation {
+    border: 5px solid black;
+    padding: 5px;   
+}
+
+/*
+    TEXT-ORIENTATION:
+    es una propiedad muy util para renderizar textos en diversos lenguajes; según cómo sea
+    la lectura de los textos de cada uno.
+    Generalmente, el uso de esta propiedad va en uso conjuntamente con la propiedad 'writing-mode'.
+
+    text-orientation: upright 
+*/
+
+.textOr_1 {
+    text-orientation: upright;
+}
+
+/*
+    writing-mode: vertical-  puede llevar, luego del '-' un:
+        - rl : esto indica que el texto se renderizará de manera vertical, permitiendo
+               la lectura de derecha a izquierda.
+        - lr : al contrario de 'rl'
+*/
+.textOr_2 {
+    padding: 5px;
+    border: 2px solid blue;
+    line-height: 1em;
+    height: min-content;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+}
+
+/*
+    text-orientation en este caso permite, además de la alineación vertical que pusimos
+    orientar el texto de costado, indicando su lectura también
+    hacia la derecha
+*/
+.textOr_3 {
+    padding: 5px;
+    border: 2px solid rebeccapurple;
+    line-height: 1em;
+    height: min-content;
+    text-orientation: sideways-right;
+    writing-mode: vertical-lr;
+}
+
+/*
+    Font ligatures
+    Permite unir las líneas de los caracteres de texto.
+    Siempre y cuando activemos esta propiedad: font-feature-settings: "liga" on;
+*/
+.font_ligatures {
+    font-family: "Fira Sans";
+    font-size: 30px;
+    font-feature-settings: "liga" on;
+}
+
+.text_align_container {
+    border: 4px solid green;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.style_italic {
+    font-style: italic;
+}
+
+.style_bold {
+    font-weight: bold;
+}
+
+.style_bold_italic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.style_oblique {
+    font-style: oblique;
+}
+
+/*
+    Para poder centrar textos dentro de botones usando el tag <span>
+    necesitamos definir la propiedad 'height' y 'line-height'con igual
+    valor
+*/
+
+.button_ex {
+    border-radius: 3px;
+    border: 2px solid green;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+.button_ex:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.button_text {
+    font-size: 30px;
+}
