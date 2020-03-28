@@ -17,8 +17,8 @@
 
 .square_hover_round {
     display: inline-block;
-    border: 3px solid blue;
-    background-color: aqua;
+    border: 3px solid green;
+    background-color: greenyellow;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 130px;
@@ -31,8 +31,8 @@
 
 .square_hover_circle {
     display: inline-block;
-    border: 3px solid green;
-    background-color: greenyellow;
+    border: 3px solid blue;
+    background-color: aqua;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 130px;
