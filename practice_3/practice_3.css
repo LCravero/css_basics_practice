@@ -1,0 +1,44 @@
+.round_borders_container {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.square {
+    display: inline-block;
+    border: 2px solid orangered;
+    background-color: orange;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 130px;
+}
+
+.square_hover_round {
+    display: inline-block;
+    border: 3px solid blue;
+    background-color: aqua;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 130px;
+}
+
+.square_hover_round:hover {
+    border-radius: 15px;
+}
+
+.square_hover_circle {
+    display: inline-block;
+    border: 3px solid green;
+    background-color: greenyellow;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 130px;
+}
+
+.square_hover_circle:hover {
+    border-radius: 100px;
+}
