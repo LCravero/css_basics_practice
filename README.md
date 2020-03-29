@@ -1,4 +1,4 @@
-![CSS3_logo](readme_content/css3_logo.jpg)
+![CSS3_logo](readme_content/css3_icon_logo.png)
 
 # CSS Basics - _(EN)_
 >## Personal practices
