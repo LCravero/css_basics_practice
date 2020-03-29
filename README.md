@@ -9,7 +9,7 @@ This repo contains CSS basics. Some personal notes and examples
 There are a branch for each topic. Check out one by one to see the code and comments into de style file attached.
 
 ---
----
+
 # CSS Básico - _(ES)_
 >## Prácticas personales
 
