@@ -1,6 +1,7 @@
-.round_borders_container {
+.practice_container {
     border: 2px solid black;
     padding: 10px;
+    margin-bottom: 30px;
     text-align: center;
     background-color: gainsboro;
 }
@@ -41,4 +42,42 @@
 
 .square_hover_circle:hover {
     border-radius: 100px;
+}
+
+/*
+    Para centrar horizontalmente un div dentro de otro (o cualquier contenido que 
+    diseñemos, contenido dentro de un container), una de las opciones disponibles 
+    es, usar 'position: relative' para el div padre (obligatoriamente);
+    y usar un margen tipo 'margin:auto' y un display 'display: block'
+*/
+
+.practice_container_ {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    background-color: gainsboro;
+}
+
+.inner_content {
+    width: 185px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border: 4px solid purple;
+    background-color: palevioletred;
+}
+
+/*
+    Usando box-shadow para dar sensación de proximidad de elementos
+    como si fuera 3D
+*/
+.box_target {
+    width: 185px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    box-shadow: -20px 2px 25px gray;
+    z-index: 3;
 }
