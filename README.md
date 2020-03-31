@@ -7,7 +7,7 @@ Here you will find basics concepts and explanation along with some examples to v
 
 ---
 
-**(ES)** *El propósito de esta guía es compartir mis prácticas personales y experiencias, trabajand con CSS.\
+**(ES)** *El propósito de esta guía es compartir mis prácticas personales y experiencias, trabajando con CSS.\
 Aquí vas a poder encontrar conceptos básicos y su explicación, junto con algunos ejemplos para ver cada concepto explicado, en acción!*
 
 
@@ -19,3 +19,6 @@ There are a branch for each topic. Check out one by one to see the code and comm
 ---
 
 **(ES)** Hay un brach para cada tema abordado. Hacer un checkout de cada rama para ver el código y comentarios dentro de cada archivo de estilo adjunto.
+
+## **CONTACT ME!**
+:incoming_envelope: ljcravero@gmail.com
