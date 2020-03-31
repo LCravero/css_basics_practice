@@ -18,7 +18,7 @@ There are a branch for each topic. Check out one by one to see the code and comm
 
 ---
 
-**(ES)** Hay un brach para cada tema abordado. Hacer un checkout de cada rama para ver el código y comentarios dentro de cada archivo de estilo adjunto.
+**(ES)** *Hay un brach para cada tema abordado. Hacer un checkout de cada rama para ver el código y comentarios dentro de cada archivo de estilo adjunto.*
 
 ## **CONTACT ME!**
 :incoming_envelope: ljcravero@gmail.com
