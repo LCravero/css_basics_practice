@@ -1,0 +1,87 @@
+.princ_container {
+    padding: 15px 5px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.display_container {
+    display: inline;
+    /* margin: auto; */
+    border: 2px solid black;
+}
+
+.display_container_2 {
+    background-color: aquamarine;
+    display: block;
+    /* margin: auto; */
+    border: 3px solid black;
+}
+
+.element_2 {
+    border: 1px solid white;
+}
+
+.display_container_3 {
+    padding: 5px 5px;
+    background-color:orange;
+    display: inline-block;
+    /* margin: auto; */
+    border: 3px solid black;
+}
+
+/*
+    Para el caso de los elementos 3 y 4, vemos dos cosas:
+    1) el elemento 3 tiene aplicado un width del 50%, haciendo que ocupe del ancho permitido
+        por el parent, un 50%. NO interfiere directamente con el ancho del parent.
+    2) el elemento 4, como consecuencia del ancho seteado en el elemento 3, se ubica al lado
+        cubriendo el ancho restante, pero por sobre todas las cosas, debido al tipo de display
+        seteado en el parent, haciendo que por más de tratarse de un elemento de bloque,
+        pueda comportarse como un elemento inline.
+*/
+.element_3 {
+    background-color: yellowgreen;
+    padding: 5px 0;
+    width: 50%;
+    font-weight: bold;
+    font-style: italic;
+    border: 1px solid white;
+    text-align: center;
+    float: left;
+}
+
+.element_4 {
+    background-color: yellow;
+    padding: 5px 0;
+    font-weight: bold;
+    font-style: italic;
+    border: 1px solid white;
+    text-align: center;
+}
+
+/*
+    Para el caso de los estilos aplicados a los elementos de bloque 5 y 6
+    usando la propiedad 'float' seteada en left y right respectivamente,
+    conseguimos imitar al comportamiento de elementos inline, como lo son
+    los <span>, por ejemplo.
+
+*/
+.element_5 {
+    background-color: cornflowerblue;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-style: italic;
+    border: 1px solid white;
+    text-align: center;
+    float: left;
+}
+
+.element_6 {
+    background-color: violet;
+    color: white;
+    padding: 5px 5px;
+    font-weight: bold;
+    font-style: italic;
+    border: 1px solid white;
+    text-align: center;
+    float: right;
+}
