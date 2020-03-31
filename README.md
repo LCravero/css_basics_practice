@@ -15,5 +15,8 @@ La propiedad **display** junto a los valores con los que puede ser seteada: _inl
 * `display: block`\
   En contraste con los elementos _inline_, la propiedad _block_ considera como **bloque** a toda una línea (considerando que esa línea tiene el mismo ancho que su contenedor).\
   Por default el tag **\<div\>** es un elemento de bloque.
-  **NOTA**: si además de especificar este tipo de display a un \<div\>, especificamos su propio _width_, veremos que nada tiene que ver el ancho de este contenedor al ancho del contenido. Siempre se considerará a cada elemento como un bloque; tenga este el mismo ancho que el contenedor padre, o no.
-  
+  **NOTA**: si además de especificar este tipo de display a un \<div\>, especificamos su propio _width_, veremos que nada tiene que ver el ancho de este contenedor al ancho del contenido. Siempre se considerará a cada elemento como un bloque; tenga este el mismo ancho que el contenedor padre, o no.\
+
+* `display: inline-block`\
+  Esta propiedad nos permite tener el comportamiento de elementos *inline* en elementos de bloque, como los **\<div\>**.\
+  *inline-block* permite customizar el ancho (width) de cada elemento de línea.
